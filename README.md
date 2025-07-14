@@ -162,6 +162,5 @@ Deskos/
     ├── apps.py
     ├── tests.py
     └── migrations/
-``
 
 
