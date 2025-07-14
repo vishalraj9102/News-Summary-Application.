@@ -164,19 +164,4 @@ Deskos/
     └── migrations/
 ``
 
-## AI Summarization
-
-The application uses the free `transformers` library with the T5 model for text summarization. This provides:
-
-- **Free**: No API costs or usage limits
-- **Offline**: Works without internet connection after initial model download
-- **Fast**: Local processing for quick responses
-- **Quality**: State-of-the-art summarization results
-
-## Testing
-
-Run the test suite:
-```bash
-python manage.py test
-```
 
