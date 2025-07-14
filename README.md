@@ -139,28 +139,30 @@ curl -X GET http://127.0.0.1:8000/api/news/saved/ \
 ## Project Structure
 
 ```
-news_summary_api/
+Deskos/
 ├── manage.py
 ├── requirements.txt
-├── .env
+├── .env                    # Environment variables
+├── .gitignore
 ├── README.md
-├── news_summary_api/
+├── db.sqlite3             # Database (auto-generated)
+├── news_summary_api/      # Django project settings
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
-├── news/
-│   ├── __init__.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── services.py
-│   └── urls.py
-└── authentication/
+└── news/                  # Main app (all features)
     ├── __init__.py
-    ├── serializers.py
-    └── views.py
-```
+    ├── models.py          # SavedArticle model
+    ├── serializers.py     # User and article serializers
+    ├── services.py        # News API and AI summarization
+    ├── views.py           # All API endpoints
+    ├── urls.py            # URL routing
+    ├── admin.py
+    ├── apps.py
+    ├── tests.py
+    └── migrations/
+``
 
 ## AI Summarization
 
